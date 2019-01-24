@@ -1,9 +1,17 @@
-% A solution to program 1.1.2. Feel free to use this code in your homework.
-% The purpose of this program is to show how we can output the 
-% computations in a 'nice' format.
+% Section 001, Problem 1.1.2
 
-% To run this program, you can go to the editor tab, and click on run (if
-% there is a popup dialog box, hit 'change folder').
+% The function that follows corresponds to the textbook problem "First",
+% though with a different function f(x). It solves the problem of finding 
+% the error between the actual derivative of f(x) = tan(x) and the 
+% expression used in the limit definition of a derivative with decreasing
+% values of h in the denominator. That is, this function approximates the 
+% derivative of f(x) = tan(x) at the point x = 0.5, running through the 
+% for loop and keeping track of the variables "i", "h", "y", and "error". 
+% Finally, the minimum error "emin" over the 30 specified values of h 
+% is displayed, along with the iteration - or value of i("imin") - 
+% at which the value "emin" was attained.
+
+% Note: the code was provided by Dr. Minkoff for this problem.
 
 format shortG;  % A nice formatting option for tabular output.
 format compact; % Changes the output to become single-spaced, as opposed
