@@ -1,4 +1,4 @@
-% Section 001, Problem 1.1.20
+ % Section 001, Problem 1.1.20
 
 % The function of the program that follows is to demonstrate different
 % types of numbers in MATLAB as they correspond to output values. It solves
@@ -7,7 +7,7 @@
 % are equal and instances when x and y are not equal due to type.
 
 
-%In this example, MATLAB reports x and y that are equal
+% In this example, MATLAB reports x and y that are equal
 format long
 x1 = 3/3
 
