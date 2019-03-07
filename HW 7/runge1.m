@@ -20,10 +20,8 @@ x1 = linspace(-5, 5, 41); % now consider 41 equispaced points in [-5, 5]
 y1 = 1./(x1.^2 + 1); % function evaluations f(x) at each of the 41 points
 f1 = polyval(p, x1); % evaluation of the polynomial p(x) at the 41 points
 
-% Let's plot both the function and polynomial values in the interval [0,2], 
+% Let's plot both the function and polynomial values in the interval [-5,-5], 
 % with the points used to obtain the polynomial fit highlighted as circles.
-% The polynomial fit is good in the original [0,1] interval, 
-% but quickly diverges from the fitted function outside of that interval.
 
 figure
 plot(x,y,'o')
@@ -37,8 +35,14 @@ legend('y','y1','f1')
 format shortG;
 format compact;
 
-clc;
-
 T = table(x1',y1',f1',y1'-f1','VariableNames',{'x1','y1','f1','FitError'})
 
-% Explanation of results:
+% Explanation of results: So we see that the interpolating polynomial
+% p(x)(which I have called f1 in my table) has oscillatory behavior.
+% That is, it fluctuates between overestimating and underestimating
+% (with varying degrees of error) the runge function f(x) between node
+% points. It behaves even "worse" beyond the end node points. It takes on
+% negative values when it dips well below the x-axis, which f(x) does not
+% do. Lastly, the polynomial should not be used to compute values of f(x)
+% outside the range of node points, as this extrapolation is not
+% trustworthy.
