@@ -11,8 +11,7 @@ function integral = Trapezoid_Uniform(f, a, b, n)
     % Input n: number of subintervals
     
     h = (b - a)/n; % spacing (or width) of subinterval 
-    s = .5*(f(a) + f(b)); % evaluation of endpoints, which takes place once.
-                          % It is the average of the heights f(a) and f(b).
+    s = .5*(f(a) + f(b)); % evaluation of endpoints, which takes place once
     
     for i = 1 : n - 1
         x = a + i*h;
