@@ -27,7 +27,7 @@ actual = int(h, t, 0, 1)
 % The following shows the error amounts between the 3 approximations of the integral and
 % the actual value of the integral, "actual" :
 
-error1 = vpa(actual - integral1)
-error2 = vpa(actual - integral2)
-error3 = vpa(actual - integral3)
+error1 = abs(vpa(actual - integral1))
+error2 = abs(vpa(actual - integral2))
+error3 = abs(vpa(actual - integral3))
 
