@@ -5,6 +5,8 @@
 % the function "quadrature". That is, we wish to approximate the integrals
 % of different functions f over different bounds of integration.
 
+format long
+
 % 2a. We are given the following function f1 with bounds a = 0 and b = 1:
 
 f1 = inline('1/sqrt(x)', 'x');
