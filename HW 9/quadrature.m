@@ -15,7 +15,7 @@ function myintegral = quadrature(f, a, b)
     k = (a + b)/2;
     l = (a + b)/2 + sqrt(3/5)*(b - a)/2;
     
-    myintegral = ((b - a)/18)*(5*f(j) + 8*f(k) + 5*f(l))
+    myintegral = ((b - a)/18)*(5*f(j) + 8*f(k) + 5*f(l));
         
 end
 
