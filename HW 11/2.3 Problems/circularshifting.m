@@ -19,7 +19,7 @@ for i = 2 : 50
     B(:,i) = circshift(x, 1 - i);
 end
     
-% Inputting these functions into "Tri" to find the solution x
+% Inputting these functions into "Tri" to find the solutions x
 for j = 1 : 50
     b = B(:, j);
 Tri(n, a, d, c, b)
