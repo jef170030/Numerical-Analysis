@@ -1,5 +1,8 @@
-function a = Gauss(n, a, l)
-
+function [a,l] = Gauss(n, a, l)
+    % input n: number of rows or columns or the matrix a
+    % input a: the matrix of coefficients
+    % input l: the index array    
+    
 for i = 1 : n
     l(i) = i;
     smax = 0;
@@ -21,7 +24,7 @@ for k = 1 : n - 1
             j = i;
         end
     end
-    l([i, k]) = l([k, i]); % swapping the i'th and k'th elements of the index vector l
+    l([j, k]) = l([k, j]); % swapping the i'th and k'th elements of the index vector l
     
     for i = k + 1 : n
         xmult = a(l(i), k)/a(l(k), k);
@@ -32,5 +35,7 @@ for k = 1 : n - 1
         end
     end
 end
+
+clear s
 end
 
