@@ -1,4 +1,4 @@
-for n = 2 : 15
+for n = 2 : 4 : 15
     
     a = zeros(n, n);
     l = 1 : n;

@@ -7,6 +7,6 @@ l = 1 : n;
 b = [.4043; .1550; .4240; .2557];
 s = zeros(n, 1);
 
-[a, l] = Gauss(n, a, l);
-x = Solve(n, a, l, b)
+[a, l] = Gauss(n, a, l)
+%x = Solve(n, a, l, b)
 
