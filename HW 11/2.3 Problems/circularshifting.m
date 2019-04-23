@@ -6,9 +6,9 @@
 
 n = 50;
 
-a = zeros(n, 1) - 1;
-d = zeros(n, 1) + 5;
-c = zeros(n, 1) - 1;
+a = zeros(n, 1) - 1; % could use 5*ones(n - 1, 1)
+d = zeros(n, 1) + 5; % could use 5*ones(n, 1)
+c = zeros(n, 1) - 1; % could use c = a
 B = zeros(n, n); % a matrix whose columns are all desired forms of given b
 
 
