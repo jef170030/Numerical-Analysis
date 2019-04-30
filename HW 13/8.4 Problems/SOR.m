@@ -27,10 +27,10 @@ function x = SOR(a, b, x, w)
             x(i) = sum/diag;
             x(i) = w*x(i) + (1 - w)*y(i);
         end
-        
-        if norm(x - y) < eps
-            disp(k)
-        end
+    end
+    
+    if norm(x - y) < eps
+        disp(k)
     end
     
     disp('maximum iterations reached')

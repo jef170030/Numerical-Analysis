@@ -26,13 +26,12 @@ function x = Gauss_Seidel(a, b, x)
             
             x(i) = sum/diag;
         end
-        
-        if norm(x - y) < eps
-            disp(k)
-        end
+    
+    if norm(x - y) < eps
+        disp(k)
     end
     
-    disp('maximum iterations reached')
+    disp('maximum iterations reached')   
 end
 
 
