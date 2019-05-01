@@ -14,6 +14,7 @@ function x = SOR(a, b, x, w)
             
             if abs(diag) < delta
                 disp('diagonal element is too small')
+                return
             end
             
             for j = 1 : i - 1
@@ -27,13 +28,15 @@ function x = SOR(a, b, x, w)
             x(i) = sum/diag;
             x(i) = w*x(i) + (1 - w)*y(i);
         end
-    end
-    
-    if norm(x - y) < eps
-        disp(k)
+        
+        if norm(x - y) < eps
+            disp(k)
+            return
+        end
     end
     
     disp('maximum iterations reached')
+    return
 end
 
 

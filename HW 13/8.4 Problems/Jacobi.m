@@ -20,6 +20,7 @@ function x = Jacobi(a, b, x)
             
             if abs(diag) < delta
                 disp('diagonal element is too small')
+                return
             end
             
             for j = 1 : n
@@ -30,13 +31,15 @@ function x = Jacobi(a, b, x)
             
             x(i) = sum/diag;
         end
-        
+
         if norm(x - y) < eps
             disp(k)
+            return
         end
     end
     
     disp('maximum iterations reached')
+    return
 end
 
 
