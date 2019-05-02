@@ -7,12 +7,14 @@
 
 % a.
 
-%A = [1 1; 0 1; 1 0]; % the given matrix
-%[U,S,V] = svd(A) % computing the singular value decomposition
-%p = round(U*S*V',1) % the product U*S*V', rounded to check for equavalence
-%A == p % checking equivalence between A and its decomposition, named "p"
+format long
 
-%S = U'*A*V
+A = [1 1; 0 1; 1 0]; % the given matrix
+[U,S,V] = svd(A) % computing the singular value decomposition
+p = round(U*S*V',1) % the product U*S*V', rounded to check for equavalence
+A == p % checking equivalence between A and its decomposition, named "p"
+
+S = U'*A*V
 
 
 % b.

@@ -5,6 +5,6 @@
 % built-in Matlab functions and their values will be displayed below.
 
 B = [-149 -50 -154; 537 180 546; -27 -9 -25];
-eigenvalues = eig(B)
-singular_values = svd(B)
-kappa = cond(B)
+eigenvalues = eig(B) % the eigenvalues
+singular_values = svd(B) % the singular values
+kappa = cond(B) % the condition number

@@ -5,8 +5,12 @@ a = [7 3 -1 2;
 
  xstart = [0; 0; 0; 0]; % arbitrary starting guess vector 
  b = [-1; 0; -3; 1];
- w = 1.4; % relaxation factor
- 
- xj = Jacobi(a, b, xstart)
- xgs = Gauss_Seidel(a, b, xstart)
- xsor = SOR(a, b, xstart, w)
+
+w1 = SOR(a, b, xstart, w)
+w2 = SOR(a, b, xstart, w)
+w3 = SOR(a, b, xstart, w)
+
+x = 
+y = 
+
+plot(x,y) % plotting the number of iterations for convergence vs the values of w
