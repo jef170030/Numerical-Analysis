@@ -1,4 +1,4 @@
-% Section 001, Exercise 7.1.2a/b
+% Section 001, Exercise 7.1.2a/b (EXTRA CREDIT)
 
 % The purpose of the following sections of code is to use a Taylor series method of
 % order 3 to approximate the solution x(t) of an ordiniary differential
