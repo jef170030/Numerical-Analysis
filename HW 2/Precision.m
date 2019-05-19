@@ -14,6 +14,7 @@ a = precision(0)
 b = precision(pi/4)
 c = sin(0) - 1 + cos(0)
 d = sin(pi/4) - 1 + cos(pi/4)
+
 function f = precision(x)
     % Computes machine-precise values for the expression sin(x) - 1 + cos(x)
     % over the interval [0, pi/4].
